@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D76228C5-CF53-42EC-9F04-D89B4FE7D622}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>Managers</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\boost_1_66_0;$(SolutionDir)GroupManager\src;$(SolutionDir)Tools\src</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\boost_1_66_0;$(SolutionDir)GroupManager\src;$(SolutionDir)Tools\src</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)GroupManager\src;$(SolutionDir)Tools\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)GroupManager\src;$(SolutionDir)Tools\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ctci\CTCI.cpp" />
+    <ClCompile Include="src\hackerrank\HackerRank.cpp" />
+    <ClCompile Include="src\hackerrank\hr_arrayproblems.cpp" />
+    <ClCompile Include="src\hackerrank\hr_stringproblems.cpp" />
+    <ClCompile Include="src\hackerrank\hr_treeproblems.cpp" />
+    <ClCompile Include="src\interviewcake\February2019.cpp" />
+    <ClCompile Include="src\interviewcake\InterviewCake.cpp" />
+    <ClCompile Include="src\interviewcamp\arraysstrings\dutchflag.cpp" />
+    <ClCompile Include="src\interviewcamp\arraysstrings\reverse_traverse.cpp" />
+    <ClCompile Include="src\interviewcamp\arraysstrings\subarray.cpp" />
+    <ClCompile Include="src\interviewcamp\arraysstrings\traverse_both_ends.cpp" />
+    <ClCompile Include="src\interviewcamp\InterviewCamp.cpp" />
+    <ClCompile Include="src\interviewcamp\week1.cpp" />
+    <ClCompile Include="src\sandbox\sand.cpp" />
+    <ClCompile Include="src\sandbox\Sandbox.cpp" />
+    <ClCompile Include="src\ctci\CTCI_CH1.cpp" />
+    <ClCompile Include="src\triplebyte\tictactoe.cpp" />
+    <ClCompile Include="src\triplebyte\Triplebyte.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ctci\CTCI.h" />
+    <ClInclude Include="src\ctci\CTCI_CH1.h" />
+    <ClInclude Include="src\hackerrank\HackerRank.h" />
+    <ClInclude Include="src\hackerrank\hr_arrayproblems.h" />
+    <ClInclude Include="src\hackerrank\hr_stringproblems.h" />
+    <ClInclude Include="src\hackerrank\hr_treeproblems.h" />
+    <ClInclude Include="src\interviewcake\February2019.h" />
+    <ClInclude Include="src\interviewcake\InterviewCake.h" />
+    <ClInclude Include="src\interviewcamp\arraysstrings\arraysstrings.h" />
+    <ClInclude Include="src\interviewcamp\InterviewCamp.h" />
+    <ClInclude Include="src\interviewcamp\week1.h" />
+    <ClInclude Include="src\sandbox\sand.h" />
+    <ClInclude Include="src\sandbox\Sandbox.h" />
+    <ClInclude Include="src\triplebyte\tictactoe.h" />
+    <ClInclude Include="src\triplebyte\Triplebyte.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroupManager\GroupManager.vcxproj">
+      <Project>{aa5ab55b-ec1e-4f55-beb0-4baf9dcce6f1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vcxproj">
+      <Project>{67c6ef24-956b-4669-ad7b-7e5b913470a9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
